@@ -4,6 +4,7 @@ import Lottie from 'lottie-react';
 import catAnim from "./assets/cat_anim.json"
 import loveAnim from "./assets/love.json"
 import moon from "./assets/moon.jpg"
+import eiffel from "./assets/eiffel.jpg"
 
 
 function App() {
@@ -38,9 +39,12 @@ useEffect(() => {
     <div className="app_container">
       {bonjour &&
       <div className='app_first_pannel'>
-        <button onClick={() => handleBtn("ok")}>bonjour😊</button>
-        <p>or</p>
-        <button onClick={() => handleBtn("no")}>non bonjour😌</button>
+        <img src={eiffel} />
+          <div className="app_bttons">
+            <button onClick={() => handleBtn("ok")}>bonjour😊</button>
+            <p>or</p>
+            <button onClick={() => handleBtn("no")}>non bonjour😌</button>
+          </div>
       </div>
       }
 
