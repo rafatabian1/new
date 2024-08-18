@@ -1,20 +1,49 @@
 .app_container{
   width: 100%;
   min-height: 100vh;
-  background-color: aquamarine;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
+
 .app_first_pannel{
     display: flex;
     align-items: center;
     justify-content: center;
     /* flex-direction: column; */
-    background-color: white;
+    background-color: rgb(231, 231, 231);
     padding: 20px 40px;
     border-radius: 15px;
     animation: first_pannel 0.5s forwards;
+}
+.app_first_pannel button{
+   margin: 0 15px;
+   border: none;
+   color: white;
+   border-radius: 5px;
+   padding: 5px 10px;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.app_first_pannel button:first-child{
+  background-color: green;
+}
+.app_first_pannel button:nth-child(3){
+  background-color: red;
+}
+.cat_anim,
+.love {
+  width: 100%;
+  height: auto;
+}
+.last_pannel{
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+  animation: first_pannel 1s forwards;
 }
 @keyframes first_pannel {
   0%{
@@ -25,4 +54,28 @@
     opacity: 1;
     scale: 1;
   }
+}
+.last_pannel > img{
+  width: 100%;
+  height: auto;
+  object-fit:cover;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+}
+.last_pannel > p {
+  position: absolute;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+  width: 100%;
+  bottom: 35vh;
+  text-align: center;
+  padding: 0 15px;
+  line-height: 25px;
 }

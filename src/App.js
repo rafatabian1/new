@@ -3,6 +3,7 @@ import './App.css';
 import Lottie from 'lottie-react';
 import catAnim from "./assets/cat_anim.json"
 import loveAnim from "./assets/love.json"
+import moon from "./assets/moon.jpg"
 
 
 function App() {
@@ -25,14 +26,13 @@ useEffect(() => {
      setTimeout(() => {
        setCat(false)
        setLove(false)
-      //  setTextt(true)
-     }, 3000)
+       setTextt(true)
+     }, 6000)
     }
 }, [cat, love])
 
 
   
-
 
   return (
     <div className="app_container">
@@ -46,8 +46,12 @@ useEffect(() => {
 
      {cat && <Lottie className="cat_anim" animationData={catAnim}/>}
      {love && <Lottie className="love" animationData={loveAnim} />}
-
-     {textt && <p>Last night, as I lay in bed, I gazed at the moon. It was so big and bathed in a warm, orange glow—so beautifully romantic. I think that we were both looking at the same moon, and in that moment, it felt like we weren’t so far apart after all...</p>}
+    
+    {textt && <div className="last_pannel">
+      <img src={moon} className="moon_img"/>
+      <p>Last night, as I lay in bed, I gazed at the moon. It was so big and bathed in a warm, orange glow—so beautifully romantic. I think that we were both looking at the same moon, and in that moment, it felt like we weren’t so far apart after all...</p>
+    </div>
+  }
     </div>
   );
 }
