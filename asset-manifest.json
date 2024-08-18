@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/new/static/css/main.8ec32085.css",
-    "main.js": "/new/static/js/main.b347d055.js",
+    "main.css": "/new/static/css/main.f623a27e.css",
+    "main.js": "/new/static/js/main.87305db8.js",
+    "static/media/eiffel.jpg": "/new/static/media/eiffel.28b18e195e6e49130145.jpg",
     "static/media/moon.jpg": "/new/static/media/moon.676ef07bbbe5fa06c937.jpg",
     "index.html": "/new/index.html",
-    "main.8ec32085.css.map": "/new/static/css/main.8ec32085.css.map",
-    "main.b347d055.js.map": "/new/static/js/main.b347d055.js.map"
+    "main.f623a27e.css.map": "/new/static/css/main.f623a27e.css.map",
+    "main.87305db8.js.map": "/new/static/js/main.87305db8.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ec32085.css",
-    "static/js/main.b347d055.js"
+    "static/css/main.f623a27e.css",
+    "static/js/main.87305db8.js"
   ]
 }
